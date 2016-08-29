@@ -447,31 +447,31 @@ var mandate = gateway.Create(
           DateSigned = DateTime.Now.AddDays(-6),
           CreateSequenceType = SequenceType.FRST,
           Subscriber = new Subscriber
+          {
+            Reference = "subscriber01"
+          },
+          Signatory = new MandateItemSignatory
+          {
+            HonoricPrefix = HonorificPrefix.Mr,
+            FamilyName = "Doe",
+            GivenName = "John",
+            Telephone = "+33612345678",
+            Email = "change.me@slimpay.com",
+            BillingAddress = new Address
             {
-              Reference = "subscriber01"
+              Street1 = "27 rue des fleurs",
+              Street2 = "Bat 2",
+              PostalCode = "75008",
+              City = "Paris",
+              Country = "FR"
             },
-            Signatory = new MandateItemSignatory
+            BankAccount = new BankAccount
             {
-              HonoricPrefix = HonorificPrefix.Mr,
-              FamilyName = "Doe",
-              GivenName = "John",
-              Telephone = "+33612345678",
-              Email = "change.me@slimpay.com",
-              BillingAddress = new Address
-              {
-                Street1 = "27 rue des fleurs",
-                Street2 = "Bat 2",
-                PostalCode = "75008",
-                City = "Paris",
-                Country = "FR"
-              },
-              BankAccount = new BankAccount
-              {
-                Bic = "DEUTFRPP",
-                Iban = "FR7616348000011523645985206"
-              }
+              Bic = "DEUTFRPP",
+              Iban = "FR7616348000011523645985206"
             }
-        })
+          }
+        });
 ```
 See full feature description at [*https://api-sandbox.slimpay.net/docs/\#import-a-standalone-legacy-mandate*](https://api-sandbox.slimpay.net/docs/#import-a-standalone-legacy-mandate)
 
