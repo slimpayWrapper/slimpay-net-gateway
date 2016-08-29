@@ -19,21 +19,13 @@ The constructor of this class takes as parameters:
 > The credentials to the service.
 
 SlimpayGateway slimpayGateway = new
-
 SlimpayGateway(
-
         SlimpayEnvironment.SANDBOX,
-
         "admin\_user@gmail.com",
-
         "usersecret",
-
         "democreditor01",
-
         "demosecret01",
-
         "democreditor"
-
       );
 
 ### 
