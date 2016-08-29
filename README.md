@@ -16,6 +16,7 @@ The constructor of this class takes as parameters:
 - The environment that configures the authentication and entry point urls to Slimpay REST interface.
 - The credentials to the service.
 
+```C#
 SlimpayGateway slimpayGateway = new
 SlimpayGateway(
         SlimpayEnvironment.SANDBOX,
@@ -25,6 +26,7 @@ SlimpayGateway(
         "demosecret01",
         "democreditor"
       );
+```
 
 ### 
 
@@ -35,18 +37,19 @@ needed for every request to the API. Usually you do not need to use it
 because all the other gateways already contain authentication logic
 which is wrapped by *AuthenticationGateway*.
 
+```C#
 var authenticationGateway = slimpayGateway.AuthenticationGateway();
-
+```
 With *AuthenticationGateway* you can:
 
 Get App token (scope api)
-
+```C#
 var appToken = authenticationGateway.AppToken();
-
+```
 Get App admin token (scope api\_admin)
-
+```C#
 var adminToken = authenticationGateway.AdminToken();
-
+```
 ### **The App Gateway**
 
 *AppGateway* should be used to work with application data. Please note
@@ -55,29 +58,25 @@ that you need scope\_admin to access these APIs.
 **Get Apps**
 
 In order to get list of apps *AppGateway.All* method should be used.
-
+```C#
 var appGateway = slimpayGateway.AppGateway();
-
 var apps = appGateway.All();
-
+```
 **Find App by name**
 
 In order to find app by name *AppGateway.Find* method should be used.
-
+```C#
 var appGateway = slimpayGateway.AppGateway();
-
 var app = appGateway.Find("demo app");
-
+```
 **Update App**
 
 In order to update an app *AppGateway.Patch* method should be used with
 the following parameters:
-
+```C#
 var appGateway = slimpayGateway.AppGateway();
-
-var app = appGateway.Patch("demo app", new AppRequest{NotifyUrl = "some
-value"});
-
+var app = appGateway.Patch("demo app", new AppRequest{NotifyUrl = "some value"});
+```
 ### 
 **The Creditor Gateway**
 
@@ -89,11 +88,10 @@ contains basic links for retrieving orders and mandates. 
 In order to find a creditor by reference *CreditorGateway.Find* method
 should be used. Creditor reference will be used from *SlimpayGateway*\
 settings in this request.
-
+```C#
 var creditorGateway= slimpayGateway.CreditorGateway();
-
 var mandate = creditorGateway.Find();
-
+```
 See full feature descripition at
 [*https://api-sandbox.slimpay.net/docs/alps/v1/\#get-creditors-safe*](https://api-sandbox.slimpay.net/docs/alps/v1/#get-creditors-safe)
 
