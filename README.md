@@ -107,7 +107,7 @@ var order = orderGateway.Create(
         new OrderRequest()
         {
           Subscriber = new SubscriberRequest() { Reference = "subscriber01" },
-          Items = new List&lt;OrderItem&gt;()
+          Items = new List<OrderItem>()
           {
             new MandateItem()
             {
@@ -151,7 +151,7 @@ var order = orderGateway.Create(
         new OrderRequest()
         {
           Subscriber = new SubscriberRequest() { Reference = "subscriber01" },
-          Items = new List&lt;OrderItem&gt;()
+          Items = new List<OrderItem>()
           {
             new MandateItem()
             {
@@ -202,7 +202,7 @@ var order = orderGateway.Create(
         new OrderRequest()
         {
           Subscriber = new SubscriberRequest() { Reference = "subscriber01" },
-          Items = new List&lt;OrderItem&gt;()
+          Items = new List<OrderItem>()
           {
             new MandateItem()
             {
@@ -258,7 +258,7 @@ var order = orderGateway.Create(
         new OrderRequest()
         {
           Subscriber = new SubscriberRequest() { Reference = "subscriber01" },
-          Items = new List&lt;OrderItem&gt;()
+          Items = new List<OrderItem>()
           {
             new MandateItem()
             {
@@ -317,85 +317,46 @@ See full feature description at [*https://api-sandbox.slimpay.net/docs/\#mandate
 In order to sign a mandate with recurrent direct debit *OrderGateway.Create* method should be used with *AutoGenReference = false.*
 ```C#
 var orderGateway = slimpayGateway.OrderGateway();
-
 var order = orderGateway.Create(
-
         new OrderRequest()
-
         {
-
-          Subscriber = new SubscriberRequest() { Reference =
-"subscriber01" },
-
-          Items = new List&lt;OrderItem&gt;()
-
+          Subscriber = new SubscriberRequest() { Reference = "subscriber01" },
+          Items = new List<OrderItem>()
           {
-
             new MandateItem()
-
             {
-
               AutoGenReference = false,
-
               Mandate = new MandateRequest()
-
               {
-
                 Signatory = new MandateItemSignatory()
-
                 {
-
                   HonoricPrefix = HonorificPrefix.Mr,
-
                   FamilyName = "Doe",
-
                   GivenName = "John",
-
                   Telephone = "+33612345678",
-
                   Email = "change.me@slimpay.com",
-
                   BillingAddress = new Address()
-
                   {
-
                     Street1 = "27 rue des fleurs",
-
                     Street2 = "Bat 2",
-
                     PostalCode = "75008",
-
                     City = "Paris",
-
                     Country = "FR"
-
                   }
-
                 }
-
               },
-
               ExtraParams = extraParams
-
             }
-
           },
-
           Started = true
-
         });
 ```
 
 See full feature description at [*https://api-sandbox.slimpay.net/docs/\#mandate-signature-without-mandate-reference-rum*](https://api-sandbox.slimpay.net/docs/#mandate-signature-without-mandate-reference-rum)
 
-All the previous Mandate features lead to Order creation with general
-information populated (such as order reference, state, payment scheme,
-creation date and the marker if the order is started). Also using
-*Order.GetUserApprovalLink()* method you are able to retrieve user
-approval link following which user can sign created mandate.
+All the previous Mandate features lead to Order creation with general information populated (such as order reference, state, payment scheme, creation date and the marker if the order is started). Also using *Order.GetUserApprovalLink()* method you are able to retrieve user approval link following which user can sign created mandate.
 
-See full description of Redirection Flow here
-[*https://api-sandbox.slimpay.net/docs/\#redirection-flow*](https://api-sandbox.slimpay.net/docs/#redirection-flow)
+See full description of Redirection Flow here [*https://api-sandbox.slimpay.net/docs/\#redirection-flow*](https://api-sandbox.slimpay.net/docs/#redirection-flow)
 
 ### 
 
@@ -410,7 +371,7 @@ var order = orderGateway.Create(
         new OrderRequest()
         {
           Subscriber = new SubscriberRequest() { Reference = "subscriber01" },
-          Items = new List&lt;OrderItem&gt;()
+          Items = new List<OrderItem>()
           {
             new SubscriberLoginItem()
             {
@@ -436,7 +397,7 @@ var order = orderGateway.Create(
         new OrderRequest()
         {
           Subscriber = new SubscriberRequest() { Reference = "subscriber01" },
-          Items = new List&lt;OrderItem&gt;()
+          Items = new List<OrderItem>()
           {
             new SubscriberLoginItem()
             {
@@ -486,33 +447,31 @@ var mandate = gateway.Create(
           DateSigned = DateTime.Now.AddDays(-6),
           CreateSequenceType = SequenceType.FRST,
           Subscriber = new Subscriber
-          {
-            Reference = "subscriber01"
-          },
-Signatory = new MandateItemSignatory
-{
-HonoricPrefix = HonorificPrefix.Mr,
-FamilyName = "Doe",
-GivenName = "John",
-Telephone = "+33612345678",
-Email = "change.me@slimpay.com",
-BillingAddress = new Address
-{
-
-Street1 = "27 rue des fleurs",
-
-Street2 = "Bat 2",
-PostalCode = "75008",
-City = "Paris",
-Country = "FR"
-},
-BankAccount = new BankAccount
-{
-Bic = "DEUTFRPP",
-Iban = "FR7616348000011523645985206"
-}
-}
-})
+            {
+              Reference = "subscriber01"
+            },
+            Signatory = new MandateItemSignatory
+            {
+              HonoricPrefix = HonorificPrefix.Mr,
+              FamilyName = "Doe",
+              GivenName = "John",
+              Telephone = "+33612345678",
+              Email = "change.me@slimpay.com",
+              BillingAddress = new Address
+              {
+                Street1 = "27 rue des fleurs",
+                Street2 = "Bat 2",
+                PostalCode = "75008",
+                City = "Paris",
+                Country = "FR"
+              },
+              BankAccount = new BankAccount
+              {
+                Bic = "DEUTFRPP",
+                Iban = "FR7616348000011523645985206"
+              }
+            }
+        })
 ```
 See full feature description at [*https://api-sandbox.slimpay.net/docs/\#import-a-standalone-legacy-mandate*](https://api-sandbox.slimpay.net/docs/#import-a-standalone-legacy-mandate)
 
@@ -610,18 +569,18 @@ In order to refund a direct debit by credit transfer *CreditTransferGateway.Crea
 ```C#
 var gateway = slimpayGateway.CreditTransferGateway();
 var creditTransfer = gateway.Create(
-new CreditTransferRequest()
-{
- Amount = 1,
- Label = "The Label",
- PaymentReference = "Payment 123",
- ExecutionDate = DateTime.Now.AddDays(7),
- Subscriber = new Subscriber()
- {
-  Reference = "subscriber01"
- },
- Currency = CurrencyType.EUR
-});
+        new CreditTransferRequest()
+        {
+          Amount = 1,
+          Label = "The Label",
+          PaymentReference = "Payment 123",
+          ExecutionDate = DateTime.Now.AddDays(7),
+          Subscriber = new Subscriber()
+          {
+            Reference = "subscriber01"
+          },
+            Currency = CurrencyType.EUR
+        });
 ```
 See full feature descripition at [*https://api-sandbox.slimpay.net/docs/\#refund-a-direct-debit-by-credit-transfer*](https://api-sandbox.slimpay.net/docs/#refund-a-direct-debit-by-credit-transfer)
 
