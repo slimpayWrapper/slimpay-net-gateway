@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slimpay.Net.Gateway", "Slimpay.Net.Gateway\Slimpay.Net.Gateway.csproj", "{6C25CDC9-C975-408E-AD29-0A2A31C89CC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slimpay.Net.Getaway.Tests", "Slimpay.Net.Getaway.Tests\Slimpay.Net.Getaway.Tests.csproj", "{59F8EF17-2D3F-49F7-9925-92C6BA783759}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slimpay.Net.Getaway.Console", "Slimpay.Net.Getaway.Console\Slimpay.Net.Getaway.Console.csproj", "{DEE22C17-AEC4-4731-8897-DFFC8C2DD179}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slimpay.Net.Gateway.Core", "Slimpay.Net.Gateway.Core\Slimpay.Net.Gateway.Core.csproj", "{196AC669-FB2F-48EC-AD43-02A570FA404E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C25CDC9-C975-408E-AD29-0A2A31C89CC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C25CDC9-C975-408E-AD29-0A2A31C89CC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C25CDC9-C975-408E-AD29-0A2A31C89CC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C25CDC9-C975-408E-AD29-0A2A31C89CC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59F8EF17-2D3F-49F7-9925-92C6BA783759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59F8EF17-2D3F-49F7-9925-92C6BA783759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59F8EF17-2D3F-49F7-9925-92C6BA783759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59F8EF17-2D3F-49F7-9925-92C6BA783759}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEE22C17-AEC4-4731-8897-DFFC8C2DD179}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEE22C17-AEC4-4731-8897-DFFC8C2DD179}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEE22C17-AEC4-4731-8897-DFFC8C2DD179}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEE22C17-AEC4-4731-8897-DFFC8C2DD179}.Release|Any CPU.Build.0 = Release|Any CPU
+		{196AC669-FB2F-48EC-AD43-02A570FA404E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{196AC669-FB2F-48EC-AD43-02A570FA404E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{196AC669-FB2F-48EC-AD43-02A570FA404E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{196AC669-FB2F-48EC-AD43-02A570FA404E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
