@@ -13,10 +13,8 @@ Before any operation with the API, you need to create an instance of the
 
 The constructor of this class takes as parameters:
 
-> The environment that configures the authentication and entry point
-> urls to Slimpay REST interface. 
->
-> The credentials to the service.
+- The environment that configures the authentication and entry point urls to Slimpay REST interface.
+- The credentials to the service.
 
 SlimpayGateway slimpayGateway = new
 SlimpayGateway(
