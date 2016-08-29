@@ -1,0 +1,1224 @@
+Message-ID: <11808564.5.1472495183945.JavaMail.js-confluence@1datagroup.atlassian.net>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_4_1914529.1472495183944"
+
+------=_Part_4_1914529.1472495183944
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Wrapper API documentation</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Wrapper API documentation</h1>
+    <div class=3D"Section1">
+        <p>Slimpay API wrapper provides access to Slimpay API using C# clas=
+ses to simplify interactions with the APIs without need to manage low-level=
+ details, such as retrieving access token, composing request and deserializ=
+ing response objects.</p>
+<h3 id=3D"WrapperAPIdocumentation-TheSlimpayGateway"><strong>The Slimpay Ga=
+teway</strong></h3>
+<p>Before any operation with the API, you need to create an instance of the=
+ <em>SlimpayGateway</em>. It is an entry point to all other gateways.</p>
+<p>The constructor of this class takes as parameters:</p>
+<p style=3D"margin-left: 36.0px;">The environment that configures the authe=
+ntication and entry point urls to Slimpay REST interface.&nbsp;</p>
+<p style=3D"margin-left: 36.0px;">The credentials to the service.</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: c#; gutter: false; theme: Confluence" data-theme=3D"Confluence">SlimpayGa=
+teway slimpayGateway =3D new
+SlimpayGateway(
+&nbsp; &nbsp; &nbsp; &nbsp; SlimpayEnvironment.SANDBOX,
+&nbsp; &nbsp; &nbsp; &nbsp; "admin_user@gmail.com",
+&nbsp; &nbsp; &nbsp; &nbsp; "usersecret",
+&nbsp; &nbsp; &nbsp; &nbsp; "democreditor01",
+&nbsp; &nbsp; &nbsp; &nbsp; "demosecret01",
+&nbsp; &nbsp; &nbsp; &nbsp; "democreditor"
+&nbsp; &nbsp; &nbsp; );</pre>=20
+</div>
+</div>
+<h3 id=3D"WrapperAPIdocumentation-"><strong><br></strong></h3>
+<h3 id=3D"WrapperAPIdocumentation-TheAuthenticationGateway"><strong>The Aut=
+hentication Gateway</strong></h3>
+<p><em>AuthenticationGateway</em> should be used to retrieve access token w=
+hich is needed for every request to the API. Usually you do not need to use=
+ it because all the other gateways already contain authentication logic whi=
+ch is wrapped by <em>AuthenticationGateway</em>.</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: c#; gutter: false; theme: Confluence" data-theme=3D"Confluence">var authe=
+nticationGateway =3D slimpayGateway.AuthenticationGateway();</pre>=20
+</div>
+</div>
+<p>With <em>AuthenticationGateway</em> you can:</p>
+<p>Get App token (scope api)</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: c#; gutter: false; theme: Confluence" data-theme=3D"Confluence">var appTo=
+ken =3D authenticationGateway.AppToken();</pre>=20
+</div>
+</div>
+<p>Get App admin token (scope api_admin)</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: c#; gutter: false; theme: Confluence" data-theme=3D"Confluence">var admin=
+Token =3D authenticationGateway.AdminToken();</pre>=20
+</div>
+</div>
+<h3 id=3D"WrapperAPIdocumentation-TheAppGateway"><strong>The App Gateway</s=
+trong><span style=3D"color: rgb(0,0,0);"><br></span></h3>
+<p><em>AppGateway</em> should be used to work with application data. Please=
+ note that you need scope_admin to access these APIs.</p>
+<p><span style=3D"color: rgb(0,0,0);"><strong><span style=3D"color: rgb(0,0=
+,0);"><strong>Get Apps</strong></span></strong></span></p>
+<p><span style=3D"color: rgb(0,0,0);"><span style=3D"color: rgb(0,0,0);">In=
+ order to get list of apps <em>AppGateway.All</em> method should be used.</=
+span></span><span style=3D"color: rgb(0,0,0);"><br></span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: c#; gutter: false; theme: Confluence" data-theme=3D"Confluence">var appGa=
+teway =3D slimpayGateway.AppGateway();
+var apps =3D appGateway.All();</pre>=20
+</div>
+</div>
+<p><strong>Find App by name</strong></p>
+<p><span style=3D"color: rgb(0,0,0);"><span style=3D"color: rgb(0,0,0);">In=
+ order to find app by name&nbsp;<em>AppGateway.Find </em>method should be u=
+sed.</span></span><span style=3D"color: rgb(0,0,0);"><span style=3D"color: =
+rgb(0,0,0);"><br></span></span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: c#; gutter: false; theme: Confluence" data-theme=3D"Confluence">var appGa=
+teway =3D slimpayGateway.AppGateway();
+var app =3D appGateway.Find("demo app");</pre>=20
+</div>
+</div>
+<p><strong>Update App</strong></p>
+<p><span style=3D"color: rgb(0,0,0);"><span style=3D"color: rgb(0,0,0);">In=
+ order to update an app&nbsp;<em>AppGateway.Patch </em>method should be use=
+d with the following parameters:</span></span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: c#; gutter: false; theme: Confluence" data-theme=3D"Confluence">var appGa=
+teway =3D slimpayGateway.AppGateway();
+var app =3D appGateway.Patch("demo app", new AppRequest{NotifyUrl =3D "some=
+ value"});</pre>=20
+</div>
+</div>
+<h3 id=3D"WrapperAPIdocumentation-TheCreditorGateway"><span style=3D"color:=
+ rgb(0,0,0);"><span style=3D"color: rgb(0,0,0);"><br></span></span><span st=
+yle=3D"color: rgb(0,0,0);"><strong>The Creditor Gateway</strong></span></h3=
+>
+<p><span style=3D"color: rgb(0,0,0);"><em>CreditorGateway</em> may be used =
+for retrieving Creditor entity which contains basic links for retrieving or=
+ders and mandates.&nbsp;</span></p>
+<h4 id=3D"WrapperAPIdocumentation-GetaCreditor"><span style=3D"color: rgb(0=
+,0,0);"><strong>Get a Creditor</strong></span></h4>
+<p><span style=3D"color: rgb(0,0,0);">In order to find a creditor by refere=
+nce <em>CreditorGateway.Find</em> method should be used. Creditor reference=
+ will be used from <em>SlimpayGateway</em></span><br><span style=3D"color: =
+rgb(0,0,0);">settings in this request.</span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: c#; gutter: false; theme: Confluence" data-theme=3D"Confluence">var credi=
+torGateway=3D slimpayGateway.CreditorGateway();
+var mandate =3D creditorGateway.Find();</pre>=20
+</div>
+</div>
+<p><span style=3D"color: rgb(0,0,0);">See full feature descripition at</spa=
+n> <a href=3D"https://api-sandbox.slimpay.net/docs/alps/v1/#get-creditors-s=
+afe" class=3D"external-link" rel=3D"nofollow">https://api-sandbox.slimpay.n=
+et/docs/alps/v1/#get-creditors-safe</a></p>
+<h3 id=3D"WrapperAPIdocumentation-TheOrderGateway"><span style=3D"color: rg=
+b(0,0,0);"><strong style=3D"color: rgb(0,0,0);font-size: 16.0px;">The Order=
+ Gateway</strong></span></h3>
+<p><span style=3D"color: rgb(0,0,0);"><em>OrderGateway</em> should be used =
+to create orders on Slimpay. The gateway allows to create different kinds o=
+f orders allowed by Slimpay.&nbsp;&nbsp;</span></p>
+<h3 id=3D"WrapperAPIdocumentation-MandateFeatures"><span style=3D"color: rg=
+b(0,0,0);"><strong style=3D"color: rgb(0,0,0);text-decoration: underline;">=
+Mandate Features</strong></span></h3>
+<h4 id=3D"WrapperAPIdocumentation-Mandatesignature"><span style=3D"color: r=
+gb(0,0,0);"><strong>Mandate signature</strong></span></h4>
+<p><span style=3D"color: rgb(0,0,0);"><br></span></p>
+<p><span style=3D"color: rgb(0,0,0);">In order to sign a mandate <em>OrderG=
+ateway.Create</em> method should be used with the following parameters:</sp=
+an></p>
+<p><span style=3D"color: rgb(0,0,0);"><strong><br></strong></span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: c#; gutter: false; theme: Confluence" data-theme=3D"Confluence">var order=
+Gateway =3D slimpayGateway.OrderGateway();
+var order =3D orderGateway.Create(
+&nbsp; &nbsp; &nbsp; &nbsp; new OrderRequest()
+&nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Subscriber =3D new SubscriberRequest() {=
+ Reference =3D "subscriber01" },
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Items =3D new List&lt;OrderItem&gt;()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; new MandateItem()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AutoGenReference =3D true,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Mandate =3D new MandateReq=
+uest()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Signatory =3D new M=
+andateItemSignatory()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; HonoricPrefi=
+x =3D HonorificPrefix.Mr,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; FamilyName =
+=3D "Doe",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; GivenName =
+=3D "John",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Telephone =
+=3D "+33612345678",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Email =3D "c=
+hange.me@slimpay.com",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BillingAddre=
+ss =3D new Address()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Stree=
+t1 =3D "27 rue des fleurs",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Stree=
+t2 =3D "Bat 2",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Posta=
+lCode =3D "75008",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; City =
+=3D "Paris",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Count=
+ry =3D "FR"
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ExtraParams =3D extraParam=
+s
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Started =3D true
+&nbsp; &nbsp; &nbsp; &nbsp; });</pre>=20
+</div>
+</div>
+<p><span style=3D"color: rgb(0,0,0);">See full feature descripition at</spa=
+n> <a href=3D"https://api-sandbox.slimpay.net/docs/#mandate-signature" clas=
+s=3D"external-link" rel=3D"nofollow">https://api-sandbox.slimpay.net/docs/#=
+mandate-signature</a></p>
+<h4 id=3D"WrapperAPIdocumentation-.1"><span style=3D"color: rgb(0,0,0);"><s=
+trong><br></strong></span></h4>
+<h4 id=3D"WrapperAPIdocumentation-MandateSignatureWithFirstDirectDebit"><sp=
+an style=3D"color: rgb(0,0,0);"><strong>Mandate Signature With First Direct=
+ Debit</strong></span></h4>
+<p><span style=3D"color: rgb(0,0,0);">In order to sign a mandate and proces=
+s a first direct debit <em>OrderGateway.Create</em> method should be used w=
+ith the following parameters:</span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: c#; gutter: false; theme: Confluence" data-theme=3D"Confluence">var order=
+Gateway =3D slimpayGateway.OrderGateway();
+var order =3D orderGateway.Create(
+&nbsp; &nbsp; &nbsp; &nbsp; new OrderRequest()
+&nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Subscriber =3D new SubscriberRequest() {=
+ Reference =3D "subscriber01" },
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Items =3D new List&lt;OrderItem&gt;()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; new MandateItem()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AutoGenReference =3D true,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Mandate =3D new MandateReq=
+uest()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Signatory =3D new M=
+andateItemSignatory()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; HonoricPrefi=
+x =3D HonorificPrefix.Mr,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; FamilyName =
+=3D "Doe",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; GivenName =
+=3D "John",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Telephone =
+=3D "+33612345678",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Email =3D "c=
+hange.me@slimpay.com",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BillingAddre=
+ss =3D new Address()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Stree=
+t1 =3D "27 rue des fleurs",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Stree=
+t2 =3D "Bat 2",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Posta=
+lCode =3D "75008",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; City =
+=3D "Paris",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Count=
+ry =3D "FR"
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ExtraParams =3D extraParam=
+s
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; new DirectDebitItem()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; DirectDebit =3D new Direct=
+Debit()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Amount =3D 100,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Label =3D "The labe=
+l",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PaymentReference =
+=3D "Payment 123"
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Started =3D true
+&nbsp; &nbsp; &nbsp; &nbsp; });</pre>=20
+</div>
+</div>
+<p><span style=3D"color: rgb(0,0,0);">See full feature description at</span=
+> <a href=3D"https://api-sandbox.slimpay.net/docs/#mandate-signature-with-f=
+irst-direct-debit" class=3D"external-link" rel=3D"nofollow">https://api-san=
+dbox.slimpay.net/docs/#mandate-signature-with-first-direct-debit</a></p>
+<p>&nbsp;</p>
+<h4 id=3D"WrapperAPIdocumentation-MandateSignatureWithRecurrentDirectDebit"=
+><strong>Mandate Signature With Recurrent Direct Debit</strong></h4>
+<p>In order to sign a mandate with recurrent direct debit <em>OrderGateway.=
+Create</em>&nbsp;method should be used with the following configuration:</p=
+>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: c#; gutter: false; theme: Confluence" data-theme=3D"Confluence">var order=
+Gateway =3D slimpayGateway.OrderGateway();
+var order =3D orderGateway.Create(
+&nbsp; &nbsp; &nbsp; &nbsp; new OrderRequest()
+&nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Subscriber =3D new SubscriberRequest() {=
+ Reference =3D "subscriber01" },
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Items =3D new List&lt;OrderItem&gt;()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; new MandateItem()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AutoGenReference =3D true,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Mandate =3D new MandateReq=
+uest()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Signatory =3D new M=
+andateItemSignatory()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; HonoricPrefi=
+x =3D HonorificPrefix.Mr,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; FamilyName =
+=3D "Doe",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; GivenName =
+=3D "John",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Telephone =
+=3D "+33612345678",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Email =3D "c=
+hange.me@slimpay.com",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BillingAddre=
+ss =3D new Address()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Stree=
+t1 =3D "27 rue des fleurs",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Stree=
+t2 =3D "Bat 2",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Posta=
+lCode =3D "75008",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; City =
+=3D "Paris",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Count=
+ry =3D "FR"
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ExtraParams =3D extraParam=
+s
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; new RecurrentDirectDebitItem()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; RecurrentDirectDebit =3D n=
+ew RecurrentDirectDebit()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Amount =3D 192,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Frequency =3D Frequ=
+encyType.Monthly,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Label =3D "This is =
+my Recurrent Direct Debit",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Activated =3D true,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; MaxSddNumber =3D 5,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; DateFrom =3D DateTi=
+me.Now.AddMonths(1)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Started =3D true
+&nbsp; &nbsp; &nbsp; &nbsp; });</pre>=20
+</div>
+</div>
+<p><span style=3D"color: rgb(0,0,0);">See full feature description at</span=
+> <a href=3D"https://api-sandbox.slimpay.net/docs/#mandate-signature-with-r=
+ecurrent-direct-debit" class=3D"external-link" rel=3D"nofollow">https://api=
+-sandbox.slimpay.net/docs/#mandate-signature-with-recurrent-direct-debit</a=
+></p>
+<h4 id=3D"WrapperAPIdocumentation-.2"><span style=3D"color: rgb(0,0,0);"><s=
+trong><br></strong></span></h4>
+<h4 id=3D"WrapperAPIdocumentation-MandateSignatureWithDirectDebitandRecurre=
+ntDirectDebit"><span style=3D"color: rgb(0,0,0);"><strong>Mandate Signature=
+ With Direct Debit and Recurrent Direct Debit</strong></span></h4>
+<p><span style=3D"color: rgb(0,0,0);">In order to sign a mandate with recur=
+rent direct debit debit <em>OrderGateway.Create</em>&nbsp;method should be =
+used.</span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: c#; gutter: false; theme: Confluence" data-theme=3D"Confluence">var order=
+Gateway =3D slimpayGateway.OrderGateway();
+var order =3D orderGateway.Create(
+&nbsp; &nbsp; &nbsp; &nbsp; new OrderRequest()
+&nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Subscriber =3D new SubscriberRequest() {=
+ Reference =3D "subscriber01" },
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Items =3D new List&lt;OrderItem&gt;()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; new MandateItem()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AutoGenReference =3D true,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Mandate =3D new MandateReq=
+uest()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Signatory =3D new M=
+andateItemSignatory()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; HonoricPrefi=
+x =3D HonorificPrefix.Mr,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; FamilyName =
+=3D "Doe",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; GivenName =
+=3D "John",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Telephone =
+=3D "+33612345678",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Email =3D "c=
+hange.me@slimpay.com",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BillingAddre=
+ss =3D new Address()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Stree=
+t1 =3D "27 rue des fleurs",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Stree=
+t2 =3D "Bat 2",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Posta=
+lCode =3D "75008",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; City =
+=3D "Paris",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Count=
+ry =3D "FR"
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ExtraParams =3D extraParam=
+s
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; new DirectDebitItem()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; DirectDebit =3D new Direct=
+Debit()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Amount =3D 100,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Label =3D "The labe=
+l",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PaymentReference =
+=3D "Payment 123"
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; new RecurrentDirectDebitItem()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; RecurrentDirectDebit =3D n=
+ew RecurrentDirectDebit()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Amount =3D 192,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Frequency =3D Frequ=
+encyType.Monthly,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Label =3D "This is =
+my Recurrent Direct Debit",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Activated =3D true,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; MaxSddNumber =3D 5,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; DateFrom =3D DateTi=
+me.Now.AddMonths(1)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Started =3D true
+&nbsp; &nbsp; &nbsp; &nbsp; });</pre>=20
+</div>
+</div>
+<p><span style=3D"color: rgb(0,0,0);">See full feature description at</span=
+> <a href=3D"https://api-sandbox.slimpay.net/docs/#mandate-signature-with-d=
+irect-debit-and-recurrent-direct-debit" class=3D"external-link" rel=3D"nofo=
+llow">https://api-sandbox.slimpay.net/docs/#mandate-signature-with-direct-d=
+ebit-and-recurrent-direct-debit</a></p>
+<p>&nbsp;</p>
+<p><span style=3D"color: rgb(0,0,0);"><strong>Mandate Signature Without Man=
+date Reference (RUM)</strong></span></p>
+<p><span style=3D"color: rgb(0,0,0);">In order to sign a mandate with recur=
+rent direct debit <em>OrderGateway.Create&nbsp;</em>method should be used w=
+ith&nbsp;<em><code>AutoGenReference =3D&nbsp;</code><code>false<span style=
+=3D"color: rgb(0,0,0);">.</span></code></em></span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: c#; gutter: false; theme: Confluence" data-theme=3D"Confluence">var order=
+Gateway =3D slimpayGateway.OrderGateway();
+var order =3D orderGateway.Create(
+&nbsp; &nbsp; &nbsp; &nbsp; new OrderRequest()
+&nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Subscriber =3D new SubscriberRequest() {=
+ Reference =3D "subscriber01" },
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Items =3D new List&lt;OrderItem&gt;()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; new MandateItem()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AutoGenReference =3D false=
+,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Mandate =3D new MandateReq=
+uest()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Signatory =3D new M=
+andateItemSignatory()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; HonoricPrefi=
+x =3D HonorificPrefix.Mr,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; FamilyName =
+=3D "Doe",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; GivenName =
+=3D "John",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Telephone =
+=3D "+33612345678",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Email =3D "c=
+hange.me@slimpay.com",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BillingAddre=
+ss =3D new Address()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Stree=
+t1 =3D "27 rue des fleurs",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Stree=
+t2 =3D "Bat 2",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Posta=
+lCode =3D "75008",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; City =
+=3D "Paris",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Count=
+ry =3D "FR"
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ExtraParams =3D extraParam=
+s
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Started =3D true
+&nbsp; &nbsp; &nbsp; &nbsp; });</pre>=20
+</div>
+</div>
+<p><span style=3D"color: rgb(0,0,0);">See full feature description at</span=
+> <a href=3D"https://api-sandbox.slimpay.net/docs/#mandate-signature-withou=
+t-mandate-reference-rum" class=3D"external-link" rel=3D"nofollow">https://a=
+pi-sandbox.slimpay.net/docs/#mandate-signature-without-mandate-reference-ru=
+m</a></p>
+<p><span style=3D"color: rgb(0,0,0);">All the previous Mandate features lea=
+d to Order creation with general information populated (such as order refer=
+ence, state, payment scheme, creation date and the marker if the order is s=
+tarted). Also using <em>Order.GetUserApprovalLink()</em> method you are abl=
+e to retrieve user approval link following which user can sign created mand=
+ate.</span></p>
+<p><span style=3D"color: rgb(0,0,0);">See full description of Redirection F=
+low here</span> <a href=3D"https://api-sandbox.slimpay.net/docs/#redirectio=
+n-flow" class=3D"external-link" rel=3D"nofollow">https://api-sandbox.slimpa=
+y.net/docs/#redirection-flow</a></p>
+<h3 id=3D"WrapperAPIdocumentation-.3"><span style=3D"text-decoration: under=
+line;"><strong><br></strong></span></h3>
+<h3 id=3D"WrapperAPIdocumentation-SubscriberLoginFeatures"><span style=3D"t=
+ext-decoration: underline;color: rgb(0,0,0);"><strong>Subscriber Login Feat=
+ures</strong></span></h3>
+<h4 id=3D"WrapperAPIdocumentation-SubscriberMandateandBankAccountManagement=
+"><span style=3D"color: rgb(0,0,0);"><strong>Subscriber Mandate and Bank Ac=
+count Management</strong></span></h4>
+<p><span style=3D"color: rgb(0,0,0);">In order to let an end-user manage it=
+s mandates and bank account details <em>OrderGateway.Create</em>&nbsp;metho=
+d should be used with <em>SubscriberLoginItem</em>&nbsp;where <em>Mode.Type=
+</em> property set to <em>SubscriberLoginModeType.ManageMandates</em>.</spa=
+n></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: c#; gutter: false; theme: Confluence" data-theme=3D"Confluence">var order=
+Gateway =3D slimpayGateway.OrderGateway();
+var order =3D orderGateway.Create(
+&nbsp; &nbsp; &nbsp; &nbsp; new OrderRequest()
+&nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Subscriber =3D new SubscriberRequest() {=
+ Reference =3D "subscriber01" },
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Items =3D new List&lt;OrderItem&gt;()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; new SubscriberLoginItem()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Mode =3D new SubscriberLog=
+inMode()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Type =3D Subscriber=
+LoginModeType.ManageMandates
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Started =3D true
+&nbsp; &nbsp; &nbsp; &nbsp; });</pre>=20
+</div>
+</div>
+<p>See full feature description at <a href=3D"https://api-sandbox.slimpay.n=
+et/docs/#subscriber-mandate-and-bank-account-management" class=3D"external-=
+link" rel=3D"nofollow">https://api-sandbox.slimpay.net/docs/#subscriber-man=
+date-and-bank-account-management</a></p>
+<h4 id=3D"WrapperAPIdocumentation-.4"><strong><br></strong></h4>
+<h4 id=3D"WrapperAPIdocumentation-SubscriberDebtRecovery"><span style=3D"co=
+lor: rgb(0,0,0);"><strong>Subscriber Debt Recovery</strong></span></h4>
+<p><span style=3D"color: rgb(0,0,0);">In order to let an end-user recover a=
+ debt by a card transaction <em>OrderGateway.Create</em><br>method should b=
+e used with</span> <em><span style=3D"color: rgb(0,0,0);">SubscriberLoginIt=
+em</span></em><span>&nbsp;</span><span style=3D"color: rgb(0,0,0);">where <=
+em>Mode.Type</em> property set to</span> <em><span style=3D"color: rgb(0,0,=
+0);">SubscriberLoginModeType.RecoverDebt</span></em>.</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: c#; gutter: false; theme: Confluence" data-theme=3D"Confluence">var order=
+Gateway =3D slimpayGateway.OrderGateway();
+var order =3D orderGateway.Create(
+&nbsp; &nbsp; &nbsp; &nbsp; new OrderRequest()
+&nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Subscriber =3D new SubscriberRequest() {=
+ Reference =3D "subscriber01" },
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Items =3D new List&lt;OrderItem&gt;()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; new SubscriberLoginItem()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Mode =3D new SubscriberLog=
+inMode()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Type =3D Subscriber=
+LoginModeType.RecoverDebt,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CardOperation =3D O=
+perationType.Authorization
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Started =3D true
+&nbsp; &nbsp; &nbsp; &nbsp; });</pre>=20
+</div>
+</div>
+<p>See full feature description at <a href=3D"https://api-sandbox.slimpay.n=
+et/docs/#subscriber-debt-recovery" class=3D"external-link" rel=3D"nofollow"=
+>https://api-sandbox.slimpay.net/docs/#subscriber-debt-recovery</a></p>
+<h3 id=3D"WrapperAPIdocumentation-OtherFeatures"><span style=3D"color: rgb(=
+0,0,0);text-decoration: underline;"><strong>Other Features</strong></span><=
+/h3>
+<p><span style=3D"color: rgb(0,0,0);">Using <em>OrderGateway.Create</em> me=
+thod you are also allowed to create some other orders where the next order =
+item types supported:</span></p>
+<ul>
+<li><span style=3D"color: rgb(51,162,189);">OperationItemType.</span><span =
+style=3D"color: rgb(0,0,0);">SignMandate,</span></li>
+<li><span style=3D"color: rgb(0,0,0);"><span style=3D"color: rgb(51,162,189=
+);">OperationItemType.</span></span><span style=3D"color: rgb(0,0,0);">Dire=
+ctDebit,</span></li>
+<li><span style=3D"color: rgb(51,162,189);">OperationItemType.</span>CardTr=
+ansaction,</li>
+<li><span style=3D"color: rgb(51,162,189);">OperationItemType.</span>Subscr=
+iberLogin,</li>
+<li><span style=3D"color: rgb(51,162,189);">OperationItemType.</span>Recurr=
+entDirectDebit</li>
+</ul>
+<h3 id=3D"WrapperAPIdocumentation-MandateGateway"><span style=3D"color: rgb=
+(0,0,0);">Mandate Gateway</span></h3>
+<p><span style=3D"color: rgb(0,0,0);">Mandate Gateway may be used for retri=
+eving&nbsp;Mandate&nbsp;entites that were created and/or signed before.</sp=
+an></p>
+<h4 id=3D"WrapperAPIdocumentation-FindaMandate"><span style=3D"color: rgb(0=
+,0,0);">Find a Mandate</span></h4>
+<p><span style=3D"color: rgb(0,0,0);">In order to find an existing mandate =
+by reference&nbsp;<em>MandateGateway.Find</em>&nbsp;method should be used w=
+ith&nbsp;reference&nbsp;passed.</span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: c#; gutter: false; theme: Confluence" data-theme=3D"Confluence">var gatew=
+ay =3D slimpayGateway.MandateGateway();
+var mandate =3D gateway.Find("SLMP002958317");</pre>=20
+</div>
+</div>
+<p><span style=3D"color: rgb(0,0,0);">See full feature descripition at</spa=
+n>&nbsp;<a href=3D"https://api-sandbox.slimpay.net/docs/alps/v1/#get-mandat=
+es-safe" class=3D"external-link" rel=3D"nofollow">https://api-sandbox.slimp=
+ay.net/docs/alps/v1/#get-mandates-safe</a></p>
+<p>&nbsp;</p>
+<h4 id=3D"WrapperAPIdocumentation-ImportaStandaloneLegacyMandate"><span sty=
+le=3D"color: rgb(0,0,0);"><strong>Import a Standalone Legacy Mandate</stron=
+g></span></h4>
+<p>In order to import a standalone legacy mandate <em>MandateGateway.Create=
+</em> method should be used.</p>
+<p>&nbsp;</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: c#; gutter: false; theme: Confluence" data-theme=3D"Confluence">var gatew=
+ay =3D slimpayGateway.MandateGateway();
+var mandate =3D gateway.Create(
+=09=09new CreateMandateRequest
+        {
+          DateSigned =3D DateTime.Now.AddDays(-6),
+          CreateSequenceType =3D SequenceType.FRST,
+          Subscriber =3D new Subscriber
+          {
+            Reference =3D "subscriber01"
+          },
+          Signatory =3D new MandateItemSignatory
+          {
+            HonoricPrefix =3D HonorificPrefix.Mr,
+            FamilyName =3D "Doe",
+            GivenName =3D "John",
+            Telephone =3D "+33612345678",
+            Email =3D "change.me@slimpay.com",
+            BillingAddress =3D new Address
+            {
+              Street1 =3D "27 rue des fleurs",
+              Street2 =3D "Bat 2",
+              PostalCode =3D "75008",
+              City =3D "Paris",
+              Country =3D "FR"
+            },
+            BankAccount =3D new BankAccount
+            {
+              Bic =3D "DEUTFRPP",
+              Iban =3D "FR7616348000011523645985206"
+            }
+          }
+        })</pre>=20
+</div>
+</div>
+<p>See full feature description at&nbsp;<a style=3D"text-decoration: underl=
+ine;" href=3D"https://api-sandbox.slimpay.net/docs/#import-a-standalone-leg=
+acy-mandate" class=3D"external-link" rel=3D"nofollow">https://api-sandbox.s=
+limpay.net/docs/#import-a-standalone-legacy-mandate</a></p>
+<p>&nbsp;</p>
+<h3 id=3D"WrapperAPIdocumentation-DirectDebitGateway"><span style=3D"color:=
+ rgb(0,0,0);"><strong>Direct Debit Gateway</strong></span></h3>
+<p><span style=3D"color: rgb(0,0,0);">DirectDebit Gateway should be used to=
+ maintain direct debits on Slimpay. The gateway supports both regular and r=
+ecurrent direct debits.</span></p>
+<h3 id=3D"WrapperAPIdocumentation-DirectDebitFeatures"><span style=3D"text-=
+decoration: underline;color: rgb(0,0,0);"><strong>Direct Debit Features</st=
+rong></span></h3>
+<h4 id=3D"WrapperAPIdocumentation-CreateaStandaloneDirectDebit"><span style=
+=3D"color: rgb(0,0,0);"><span style=3D"text-decoration: underline;"><br></s=
+pan><strong style=3D"font-size: 16.0px;">Create a Standalone Direct Debit</=
+strong></span></h4>
+<p><span style=3D"color: rgb(0,0,0);">In order to create a standalone direc=
+t debit <em>DirectDebitGateway.CreateStandalone</em> method should be used =
+with <em>CreateDirectDebitRequest</em>&nbsp;passed.</span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: c#; gutter: false; theme: Confluence" data-theme=3D"Confluence">var gatew=
+ay =3D slimpayGateway.DirectDebitGateway();
+var directDebit =3D gateway.CreateStandalone(
+&nbsp; &nbsp; &nbsp; &nbsp; new CreateDirectDebitRequest()
+&nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Amount =3D 100,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Label =3D "The Label",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PaymentReference =3D "Payment 123",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ExecutionDate =3D DateTime.Now.AddDays(7=
+),
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Subscriber =3D new Subscriber()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Reference =3D "subscriber01"
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; });</pre>=20
+</div>
+</div>
+<p><span style=3D"color: rgb(0,0,0);">See full feature descripition at</spa=
+n> <a href=3D"https://api-sandbox.slimpay.net/docs/#create-a-standalone-dir=
+ect-debit" class=3D"external-link" rel=3D"nofollow">https://api-sandbox.sli=
+mpay.net/docs/#create-a-standalone-direct-debit</a></p>
+<p>&nbsp;</p>
+<h4 id=3D"WrapperAPIdocumentation-UpdateaDirectDebit"><span style=3D"color:=
+ rgb(0,0,0);"><strong>Update a Direct Debit</strong></span></h4>
+<p><span style=3D"color: rgb(0,0,0);">In order to update a direct debit <em=
+>DirectDebitGateway.UpdateStandalone</em> method should be used with</span>=
+ <span style=3D"color: rgb(0,0,0);"><em>UpdateDirectDebitRequest </em></spa=
+n>passed.</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: c#; gutter: false; theme: Confluence" data-theme=3D"Confluence">var gatew=
+ay =3D slimpayGateway.DirectDebitGateway();
+var directDebitUpd =3D gateway.UpdateStandalone(
+&nbsp; &nbsp; &nbsp; &nbsp; new UpdateDirectDebitRequest()
+&nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Id =3D directDebit.Id,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Amount =3D 200,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Label =3D "Your merchant.com subscriptio=
+n updated",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PaymentReference =3D "REFERENCE",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ExecutionDate =3D new DateTime(2017, 1, =
+1)
+&nbsp; &nbsp; &nbsp; &nbsp; });</pre>=20
+</div>
+</div>
+<p>See full feature descripition at <a href=3D"https://api-sandbox.slimpay.=
+net/docs/#update-a-direct-debit" class=3D"external-link" rel=3D"nofollow">h=
+ttps://api-sandbox.slimpay.net/docs/#update-a-direct-debit</a></p>
+<p>These methods result in <span>DirectDebit</span> entities with all the f=
+ields populated.</p>
+<h4 id=3D"WrapperAPIdocumentation-.5"><strong><br></strong></h4>
+<h4 id=3D"WrapperAPIdocumentation-CreateaStandaloneRecurrentDirectDebit"><s=
+pan style=3D"color: rgb(0,0,0);"><strong>Create a Standalone Recurrent Dire=
+ct Debit</strong></span></h4>
+<p><span style=3D"color: rgb(0,0,0);">In order to create a standalone reccu=
+rrent direct debit <em>DirectDebitGateway.</em><em>CreateRecurrent</em> met=
+hod should be used with <em>CreateRecurrentDirectDebitRequest</em>&nbsp;pas=
+sed.</span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: c#; gutter: false; theme: Confluence" data-theme=3D"Confluence">var gatew=
+ay =3D slimpayGateway.DirectDebitGateway();
+var recurrentDirectDebit =3D gateway.CreateRecurrent(
+&nbsp; &nbsp; &nbsp; &nbsp; new CreateRecurrentDirectDebitRequest()
+&nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Amount =3D 100,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Label =3D "Your merchant.com subscriptio=
+n",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Reference =3D "RDD-01",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Frequency =3D FrequencyType.Monthly,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; MaxSddNumber =3D 12,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Activated =3D true,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; DateFrom =3D DateTime.Now.AddDays(3),
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Subscriber =3D new Subscriber()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Reference =3D "subscriber01"
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; });</pre>=20
+</div>
+</div>
+<p><span style=3D"color: rgb(0,0,0);">See full feature descripition at</spa=
+n> <a href=3D"https://api-sandbox.slimpay.net/docs/#create-a-standalone-rec=
+urrent-direct-debit" class=3D"external-link" rel=3D"nofollow">https://api-s=
+andbox.slimpay.net/docs/#create-a-standalone-recurrent-direct-debit</a></p>
+<h4 id=3D"WrapperAPIdocumentation-SearchDirectDebitIssues(Rtransactions)">S=
+earch Direct Debit Issues (Rtransactions)</h4>
+<p><span style=3D"color: rgb(0,0,0);"><br></span></p>
+<p><span style=3D"color: rgb(0,0,0);"><span>In order to search for direct d=
+ebit issues</span>&nbsp;<em>DirectDebitIssueGateway.Search</em>&nbsp;method=
+ should be used.</span></p>
+<p><span style=3D"color: rgb(0,0,0);"><br></span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: c#; gutter: false; theme: Confluence" data-theme=3D"Confluence">var gatew=
+ay =3D slimpayGateway.DirectDebitIssueGateway();
+var issuesContainer =3D gateway.Search("creditor01");</pre>=20
+</div>
+</div>
+<p><span style=3D"color: rgb(0,0,0);"><br></span></p>
+<p><span style=3D"color: rgb(0,0,0);">See full feature descripition at</spa=
+n>&nbsp;<a href=3D"https://api-sandbox.slimpay.net/docs/#search-direct-debi=
+t-issues-rtransactions" class=3D"external-link" rel=3D"nofollow">https://ap=
+i-sandbox.slimpay.net/docs/#search-direct-debit-issues-rtransactions</a></p=
+>
+<p>&nbsp;</p>
+<p><span style=3D"color: rgb(0,0,0);"><br></span></p>
+<h3 id=3D"WrapperAPIdocumentation-AcknowledgeaDirectDebitIssue(Rtransaction=
+)">Acknowledge a Direct Debit Issue (Rtransaction)</h3>
+<p><span style=3D"color: rgb(0,0,0);"><br></span></p>
+<p><span style=3D"color: rgb(0,0,0);"><span>By acknowledging a direct debit=
+ issue, the merchant explicitly changes the execution status&nbsp;</span><s=
+pan>of a direct debit issue.</span>&nbsp;</span><em style=3D"color: rgb(0,0=
+,0);line-height: 1.42857;">DirectDebitIssueGateway.Acknowledge&nbsp;</em><s=
+pan style=3D"color: rgb(0,0,0);">method should be used.</span></p>
+<p><span style=3D"color: rgb(0,0,0);"><br></span></p>
+<p><span style=3D"color: rgb(0,0,0);"><br></span></p>
+<p><span style=3D"color: rgb(0,0,0);"><br></span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: c#; gutter: false; theme: Confluence" data-theme=3D"Confluence">var gatew=
+ay =3D slimpayGateway.DirectDebitIssueGateway();
+var issue =3D gateway.Acknowledge ("a47664f5-6855-11e6-999e-000000000000");=
+</pre>=20
+</div>
+</div>
+<p><span style=3D"color: rgb(0,0,0);"><br></span></p>
+<p><span style=3D"color: rgb(0,0,0);">See full feature descripition at</spa=
+n>&nbsp;<a style=3D"line-height: 1.42857;" href=3D"https://api-sandbox.slim=
+pay.net/docs/#acknowledge-a-direct-debit-issue-rtransaction" class=3D"exter=
+nal-link" rel=3D"nofollow">https://api-sandbox.slimpay.net/docs/#acknowledg=
+e-a-direct-debit-issue-rtransaction</a></p>
+<h3 id=3D"WrapperAPIdocumentation-RefundaDirectDebitbyCreditTransfer">Refun=
+d a Direct Debit by Credit Transfer</h3>
+<p><span style=3D"color: rgb(0,0,0);"><span>In order to refund a direct deb=
+it by credit transfer</span><em>&nbsp;CreditTransferGateway</em></span><em =
+style=3D"line-height: 1.42857;">.Create&nbsp;</em><span style=3D"color: rgb=
+(0,0,0);">method should be used with&nbsp;<em>CreditTransferRequest&nbsp;</=
+em><span style=3D"color: rgb(0,0,0);">passed.</span>.</span></p>
+<p><span style=3D"color: rgb(0,0,0);"><br></span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: c#; gutter: false; theme: Confluence" data-theme=3D"Confluence">var gatew=
+ay =3D slimpayGateway.CreditTransferGateway();
+var creditTransfer =3D gateway.Create(
+=09=09new CreditTransferRequest()
+        {
+          Amount =3D 1,
+          Label =3D "The Label",
+          PaymentReference =3D "Payment 123",
+          ExecutionDate =3D DateTime.Now.AddDays(7),
+          Subscriber =3D new Subscriber()
+          {
+            Reference =3D "subscriber01"
+          },
+          Currency =3D CurrencyType.EUR
+        });</pre>=20
+</div>
+</div>
+<p><span style=3D"color: rgb(0,0,0);">See full feature descripition at</spa=
+n>&nbsp;<a href=3D"https://api-sandbox.slimpay.net/docs/#refund-a-direct-de=
+bit-by-credit-transfer" class=3D"external-link" rel=3D"nofollow">https://ap=
+i-sandbox.slimpay.net/docs/#refund-a-direct-debit-by-credit-transfer</a></p=
+>
+<p><span style=3D"color: rgb(0,0,0);"><strong><br></strong></span></p>
+<p><strong style=3D"color: rgb(0,0,0);line-height: 1.42857;">Update a Recur=
+rent Direct Debit</strong></p>
+<p>In order to update a standalone reccurrent direct debit <em>DirectDebitG=
+ateway.UpdateRecurrent</em> method should be used with <span style=3D"color=
+: rgb(51,162,189);"><span style=3D"color: rgb(0,0,0);"><em>UpdateRecurrentD=
+irectDebitRequest</em></span>&nbsp;</span><span style=3D"color: rgb(0,0,0);=
+">passed.</span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: c#; gutter: false; theme: Confluence" data-theme=3D"Confluence">var gatew=
+ay =3D slimpayGateway.DirectDebitGateway();
+var recurrentDirectDebitUpd =3D gateway.UpdateRecurrent(
+&nbsp; &nbsp; &nbsp; &nbsp; new UpdateRecurrentDirectDebitRequest()
+&nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Id =3D recurrentDirectDebit.Id,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Amount =3D 200,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Label =3D "Your merchant.com subscriptio=
+n updated"
+&nbsp; &nbsp; &nbsp; &nbsp; });</pre>=20
+</div>
+</div>
+<p>See full feature descripition at <a href=3D"https://api-sandbox.slimpay.=
+net/docs/#update-a-recurrent-direct-debit" class=3D"external-link" rel=3D"n=
+ofollow">https://api-sandbox.slimpay.net/docs/#update-a-recurrent-direct-de=
+bit</a></p>
+<p>These methods result in RecurrentDirectDebit entities with all the field=
+s populated.</p>
+<h3 id=3D"WrapperAPIdocumentation-.6"><span style=3D"color: rgb(0,0,0);"><s=
+trong><br></strong></span></h3>
+<h3 id=3D"WrapperAPIdocumentation-DocumentGateway"><span style=3D"color: rg=
+b(0,0,0);"><strong>Document Gateway</strong></span></h3>
+<p><span style=3D"color: rgb(0,0,0);">Document Gateway should be used to ma=
+intain the documents on Slimpay.</span></p>
+<h3 id=3D"WrapperAPIdocumentation-DocumentFeatures"><span style=3D"text-dec=
+oration: underline;color: rgb(0,0,0);"><strong>Document Features</strong></=
+span></h3>
+<h4 id=3D"WrapperAPIdocumentation-DocumentTimestamping"><span style=3D"colo=
+r: rgb(0,0,0);"><strong>Document Timestamping</strong></span></h4>
+<p><span style=3D"color: rgb(0,0,0);">The SlimPay HAPI supports timestampin=
+g a PDF document. The purpose of timestamping is to build a proof that a do=
+cument has existed at the time defined in the timestamp. This proof is then=
+ integrated into the PDF document and can be visualized using a compatible =
+PDF reader such as Adobe Acrobat Xi. The SlimPay HAPI stores the timestampe=
+d document and the created resource is accessible whenever needed.</span></=
+p>
+<p><span style=3D"color: rgb(0,0,0);">This timestamping process consists, b=
+ehinds the scene, in following the RFC 3161 to retrieve a timestamp from a =
+timestamp authority. In order to timestamp a PDF document DocumentGateway.C=
+reate method should be used.</span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: c#; gutter: false; theme: Confluence" data-theme=3D"Confluence">var gatew=
+ay =3D slimpayGateway.DocumentGateway();
+var document =3D gateway.Create(
+&nbsp; &nbsp; &nbsp; &nbsp; new DocumentRequest()
+&nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Timestamped =3D true,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BinaryContent =3D new BinaryContentReque=
+st()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Content =3D "JVBERi0xLjQKJeLjz9MK=
+MiAwIG9iago8PC9MZW5ndGggOTQvRmlsdGVyL0ZsYXRlRGVjb2RlPj5zdHJlYW0KeJwr5HIK4TI=
+2U7AwMFMISeEyUNA1tAAx9N0MFQyNFELSuDQ8UnNy8hXC84tyUhQVwlNTFNxSkxSAqgyNrAyMrY=
+wsFZxdQxSMDAxNNUOygAYYgLS7hnAFcgEA5PgVTwplbmRzdHJlYW0KZW5kb2JqCjQgMCBvYmoKP=
+DwvUGFyZW50IDMgMCBSL0NvbnRlbnRzIDIgMCBSL1R5cGUvUGFnZS9SZXNvdXJjZXM8PC9Qcm9j=
+U2V0IFsvUERGIC9UZXh0IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJXS9Gb250PDwvRjEgMSAwIFI=
++Pj4+L01lZGlhQm94WzAgMCA1OTUgODQyXT4+CmVuZG9iagoxIDAgb2JqCjw8L0Jhc2VGb250L0=
+hlbHZldGljYS9UeXBlL0ZvbnQvRW5jb2RpbmcvV2luQW5zaUVuY29kaW5nL1N1YnR5cGUvVHlwZ=
+TE+PgplbmRvYmoKMyAwIG9iago8PC9UeXBlL1BhZ2VzL0NvdW50IDEvS2lkc1s0IDAgUl0+Pgpl=
+bmRvYmoKNSAwIG9iago8PC9UeXBlL0NhdGFsb2cvUGFnZXMgMyAwIFI+PgplbmRvYmoKNiAwIG9=
+iago8PC9Qcm9kdWNlcihpVGV4dK4gNS40LjEgqTIwMDAtMjAxMiAxVDNYVCBCVkJBIFwoQUdQTC=
+12ZXJzaW9uXCkpL01vZERhdGUoRDoyMDE1MDIxODEyMDMyOSswMScwMCcpL0NyZWF0aW9uRGF0Z=
+ShEOjIwMTUwMjE4MTIwMzI5KzAxJzAwJyk+PgplbmRvYmoKeHJlZgowIDcKMDAwMDAwMDAwMCA2=
+NTUzNSBmIAowMDAwMDAwMzMyIDAwMDAwIG4gCjAwMDAwMDAwMTUgMDAwMDAgbiAKMDAwMDAwMDQ=
+yMCAwMDAwMCBuIAowMDAwMDAwMTc1IDAwMDAwIG4gCjAwMDAwMDA0NzEgMDAwMDAgbiAKMDAwMD=
+AwMDUxNiAwMDAwMCBuIAp0cmFpbGVyCjw8L1Jvb3QgNSAwIFIvSUQgWzwzZWRhMDI0N2RmYjE4N=
+GZlNDY2ODZkZTEyYWU5OTQyZT48NmQyODVkNzBlYTg0ZGZhZjhhNDAxNzcxOGVlMjM0ZTU+XS9J=
+bmZvIDYgMCBSL1NpemUgNz4+CiVpVGV4dC01LjQuMQpzdGFydHhyZWYKNjY5CiUlRU9GCg=3D=
+=3D"
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; });</pre>=20
+</div>
+</div>
+<p><span style=3D"color: rgb(0,0,0);">See full feature descripition at</spa=
+n> <a href=3D"https://api-sandbox.slimpay.net/docs/#document-timestamping" =
+class=3D"external-link" rel=3D"nofollow">https://api-sandbox.slimpay.net/do=
+cs/#document-timestamping</a></p>
+<p>&nbsp;</p>
+    </div>
+</body>
+</html>
+------=_Part_4_1914529.1472495183944--
