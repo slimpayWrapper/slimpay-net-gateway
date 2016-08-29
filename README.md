@@ -21,6 +21,7 @@ The constructor of this class takes as parameters:
 SlimpayGateway slimpayGateway = new
 SlimpayGateway(
         SlimpayEnvironment.SANDBOX,
+        
         "admin\_user@gmail.com",
         "usersecret",
         "democreditor01",
