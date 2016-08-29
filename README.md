@@ -88,7 +88,7 @@ var appGateway = slimpayGateway.AppGateway();
 var app = appGateway.Patch("demo app", new AppRequest{NotifyUrl = "some
 value"});
 
-### \
+### 
 **The Creditor Gateway**
 
 *CreditorGateway* may be used for retrieving Creditor entity which
@@ -124,68 +124,36 @@ var orderGateway = slimpayGateway.OrderGateway();
 var order = orderGateway.Create(
 
         new OrderRequest()
-
         {
-
-          Subscriber = new SubscriberRequest() { Reference =
-"subscriber01" },
-
+          Subscriber = new SubscriberRequest() { Reference = "subscriber01" },
           Items = new List&lt;OrderItem&gt;()
-
           {
-
             new MandateItem()
-
             {
-
               AutoGenReference = true,
-
               Mandate = new MandateRequest()
-
               {
-
                 Signatory = new MandateItemSignatory()
-
                 {
-
                   HonoricPrefix = HonorificPrefix.Mr,
-
                   FamilyName = "Doe",
-
                   GivenName = "John",
-
                   Telephone = "+33612345678",
-
                   Email = "change.me@slimpay.com",
-
                   BillingAddress = new Address()
-
                   {
-
                     Street1 = "27 rue des fleurs",
-
                     Street2 = "Bat 2",
-
                     PostalCode = "75008",
-
                     City = "Paris",
-
                     Country = "FR"
-
                   }
-
                 }
-
               },
-
               ExtraParams = extraParams
-
             }
-
           },
-
           Started = true
-
         });
 
 See full feature descripition at
@@ -267,23 +235,14 @@ var order = orderGateway.Create(
             {
 
               DirectDebit = new DirectDebit()
-
               {
-
                 Amount = 100,
-
                 Label = "The label",
-
                 PaymentReference = "Payment 123"
-
               }
-
             }
-
           },
-
           Started = true
-
         });
 
 See full feature description at
@@ -966,65 +925,39 @@ transfer* CreditTransferGateway.Create *method should be used
 with *CreditTransferRequest *passed..
 
 var gateway = slimpayGateway.CreditTransferGateway();
-
 var creditTransfer = gateway.Create(
-
 new CreditTransferRequest()
-
 {
-
-Amount = 1,
-
-Label = "The Label",
-
-PaymentReference = "Payment 123",
-
-ExecutionDate = DateTime.Now.AddDays(7),
-
-Subscriber = new Subscriber()
-
-{
-
-Reference = "subscriber01"
-
-},
-
-Currency = CurrencyType.EUR
-
+ Amount = 1,
+ Label = "The Label",
+ PaymentReference = "Payment 123",
+ ExecutionDate = DateTime.Now.AddDays(7),
+ Subscriber = new Subscriber()
+ {
+  Reference = "subscriber01"
+ },
+ Currency = CurrencyType.EUR
 });
 
-See full feature descripition
-at [*https://api-sandbox.slimpay.net/docs/\#refund-a-direct-debit-by-credit-transfer*](https://api-sandbox.slimpay.net/docs/#refund-a-direct-debit-by-credit-transfer)
+See full feature descripition at [*https://api-sandbox.slimpay.net/docs/\#refund-a-direct-debit-by-credit-transfer*](https://api-sandbox.slimpay.net/docs/#refund-a-direct-debit-by-credit-transfer)
 
 **Update a Recurrent Direct Debit**
 
-In order to update a standalone reccurrent direct debit
-*DirectDebitGateway.UpdateRecurrent* method should be used with
+In order to update a standalone reccurrent direct debit *DirectDebitGateway.UpdateRecurrent* method should be used with
 *UpdateRecurrentDirectDebitRequest* passed.
 
 var gateway = slimpayGateway.DirectDebitGateway();
-
 var recurrentDirectDebitUpd = gateway.UpdateRecurrent(
-
         new UpdateRecurrentDirectDebitRequest()
-
         {
-
           Id = recurrentDirectDebit.Id,
-
           Amount = 200,
-
           Label = "Your merchant.com subscription updated"
-
         });
 
-See full feature descripition at
-[*https://api-sandbox.slimpay.net/docs/\#update-a-recurrent-direct-debit*](https://api-sandbox.slimpay.net/docs/#update-a-recurrent-direct-debit)
+See full feature descripition at [*https://api-sandbox.slimpay.net/docs/\#update-a-recurrent-direct-debit*](https://api-sandbox.slimpay.net/docs/#update-a-recurrent-direct-debit)
 
-These methods result in RecurrentDirectDebit entities with all the
-fields populated.
-
-### 
+These methods result in RecurrentDirectDebit entities with all the fields populated.
 
 ### **Document Gateway**
 
@@ -1046,27 +979,15 @@ RFC 3161 to retrieve a timestamp from a timestamp authority. In order to
 timestamp a PDF document DocumentGateway.Create method should be used.
 
 var gateway = slimpayGateway.DocumentGateway();
-
 var document = gateway.Create(
-
         new DocumentRequest()
-
         {
-
           Timestamped = true,
-
           BinaryContent = new BinaryContentRequest()
-
           {
-
             Content =
 "JVBERi0xLjQKJeLjz9MKMiAwIG9iago8PC9MZW5ndGggOTQvRmlsdGVyL0ZsYXRlRGVjb2RlPj5zdHJlYW0KeJwr5HIK4TI2U7AwMFMISeEyUNA1tAAx9N0MFQyNFELSuDQ8UnNy8hXC84tyUhQVwlNTFNxSkxSAqgyNrAyMrYwsFZxdQxSMDAxNNUOygAYYgLS7hnAFcgEA5PgVTwplbmRzdHJlYW0KZW5kb2JqCjQgMCBvYmoKPDwvUGFyZW50IDMgMCBSL0NvbnRlbnRzIDIgMCBSL1R5cGUvUGFnZS9SZXNvdXJjZXM8PC9Qcm9jU2V0IFsvUERGIC9UZXh0IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJXS9Gb250PDwvRjEgMSAwIFI+Pj4+L01lZGlhQm94WzAgMCA1OTUgODQyXT4+CmVuZG9iagoxIDAgb2JqCjw8L0Jhc2VGb250L0hlbHZldGljYS9UeXBlL0ZvbnQvRW5jb2RpbmcvV2luQW5zaUVuY29kaW5nL1N1YnR5cGUvVHlwZTE+PgplbmRvYmoKMyAwIG9iago8PC9UeXBlL1BhZ2VzL0NvdW50IDEvS2lkc1s0IDAgUl0+PgplbmRvYmoKNSAwIG9iago8PC9UeXBlL0NhdGFsb2cvUGFnZXMgMyAwIFI+PgplbmRvYmoKNiAwIG9iago8PC9Qcm9kdWNlcihpVGV4dK4gNS40LjEgqTIwMDAtMjAxMiAxVDNYVCBCVkJBIFwoQUdQTC12ZXJzaW9uXCkpL01vZERhdGUoRDoyMDE1MDIxODEyMDMyOSswMScwMCcpL0NyZWF0aW9uRGF0ZShEOjIwMTUwMjE4MTIwMzI5KzAxJzAwJyk+PgplbmRvYmoKeHJlZgowIDcKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMzMyIDAwMDAwIG4gCjAwMDAwMDAwMTUgMDAwMDAgbiAKMDAwMDAwMDQyMCAwMDAwMCBuIAowMDAwMDAwMTc1IDAwMDAwIG4gCjAwMDAwMDA0NzEgMDAwMDAgbiAKMDAwMDAwMDUxNiAwMDAwMCBuIAp0cmFpbGVyCjw8L1Jvb3QgNSAwIFIvSUQgWzwzZWRhMDI0N2RmYjE4NGZlNDY2ODZkZTEyYWU5OTQyZT48NmQyODVkNzBlYTg0ZGZhZjhhNDAxNzcxOGVlMjM0ZTU+XS9JbmZvIDYgMCBSL1NpemUgNz4+CiVpVGV4dC01LjQuMQpzdGFydHhyZWYKNjY5CiUlRU9GCg=="
-
           }
-
         });
 
-See full feature descripition at
-[*https://api-sandbox.slimpay.net/docs/\#document-timestamping*](https://api-sandbox.slimpay.net/docs/#document-timestamping)
-
- 
+See full feature descripition at [*https://api-sandbox.slimpay.net/docs/\#document-timestamping*](https://api-sandbox.slimpay.net/docs/#document-timestamping)
